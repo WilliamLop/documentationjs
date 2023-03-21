@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600;800&family=Poppins:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav__title{
+    margin-top: 2rem;
+    padding: 1rem;
+    color: #000000;
+
+}
+.nav__title strong {
+    color: #fca311;
+}
+
+.close{
+    left: -300%;
+}
+
+.header{
+    box-sizing: border-box;
+    display: flex;
+    gap: 1rem;
+    position: fixed;
+    width: 40%;
+    top: 0;
+
+   
+} 
+nav{
+    position: absolute;
+    /* background:#000000; */
+    background: #f8f8f8;
+    height: 100vh;
+    z-index: -1;
+    width: 290px;
+    transition: all .50s ease;
+    top: 0;
+    left: -250%;
+    overflow: scroll;
+
+
+}
+
+.menu{
+    width: 50px;
+    padding-inline-start: 1rem;
+    padding-top: .5rem;
+    color: #fca311;
+    background-color: #000000;
+    border-radius: 0 0 .5rem 0;
+}
+
+.icon-left{
+    padding-inline-start: 1rem;
+    padding-top: .5rem;
+    color: #bc4749;
+    transition: .50s ease;
+
+}
+.nav__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list__items{
+    border-top: 1px solid #fca2118c;
+    padding-inline-start: 1rem;
+    padding: .7rem 0 .7rem 1rem;
+    line-height: 2;
+    font-size: .9em;
+    
+}
+
+.list__items a{
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.open{
+    left: 0;
+}
+
+
+
+main{
+    width: 100%;
+    background-color: transparent;
+    height:100vh;
+    margin-top: 3rem;
+
+}
+
+h1{
+    font-weight: 800;
+    font-family: 'Karla', sans-serif;
+}
+
+.main__text{
+    padding: 0 1rem;
+}
+.small{
+    font-size: .9em;
+}
+.main__items{
+    margin-top: 1rem;
+    font-size: .95em;
+    padding-right:.3rem;
+
+
+}
+
+.main__list{
+    padding-right: 1rem;
+    font-size: .9em;
+}
+
+.code__container{
+    background-color: #F7F7F7;
+    border-radius: .5rem;
+    width: 85%;
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+.code{
+    color: gray;
+}
+@media(min-width:48rem){
+    nav{
+        left: 0;
+        width: 300px;
+        background: #f8f8f8d2;
+    
+    }
+    .nav__title{
+        margin-top: 0;
+        color: #000000;
+    }
+    .nav__list{
+        background-color: #e5e5e533;
+        position: none;
+    }
+    .list__items a{
+        color: #000000;
+    }
+    
+    .menu{
+        display:none;
+    }
+    
+    main{
+        margin: 0;
+        width:calc(100% - 300px);
+        float:right;
+    }
+    .main__text{
+        padding: 0 2rem;
+    }
+    .main__list{
+        padding: 0 5rem;
+    }
+    .small{
+        font-size: 1em;
+    }
+    
+    
+}
